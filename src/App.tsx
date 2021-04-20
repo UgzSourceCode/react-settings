@@ -9,7 +9,11 @@ function App() {
           <p>In this place you can see values from custom enviroment variables</p>
           <p>For set this value you can set this values before run node server or create ".env" file</p>
           <p>REACT_APP_NAME:</p>
-          <p>{process.env.REACT_APP_NAME}</p>
+          {process.env.REACT_APP_NAME? (
+            <p>{process.env.REACT_APP_NAME}</p>
+          ) : (
+            <div style={{color: "red"}}>NONE</div>
+          )}
           <p>REACT_APP_API:</p>
           {process.env.REACT_APP_API? (
             <p>{process.env.REACT_APP_API}</p>
