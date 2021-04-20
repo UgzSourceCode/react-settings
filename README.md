@@ -1,12 +1,12 @@
 # react-settings
-A basic implementation of configuration in react app
+It is a basic implementation of configuration in react app.
 
 React project was start by create-react-app with typescript tempalate.
 
 ## Knowlage
 
 I based on artilce from link:
- - https://create-react-app.dev/docs/adding-typescript/
+ - https://create-react-app.dev/docs/adding-custom-environment-variables/
  - https://app.pluralsight.com/guides/how-to-store-and-read-configuration-files-using-react
 
 ## Available Scripts

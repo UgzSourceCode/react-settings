@@ -1,23 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div>
+          <p>In this place you can see values from custom enviroment variables</p>
+          <p>For set this value you can set this values before run node server or create ".env" file</p>
+          <p>REACT_APP_NAME:</p>
+          {process.env.REACT_APP_NAME? (
+            <p>{process.env.REACT_APP_NAME}</p>
+          ) : (
+            <div style={{color: "red"}}>NONE</div>
+          )}
+          <p>REACT_APP_API:</p>
+          {process.env.REACT_APP_API? (
+            <p>{process.env.REACT_APP_API}</p>
+          ) : (
+            <div style={{color: "red"}}>NONE</div>
+          )}
+        </div>
       </header>
     </div>
   );
