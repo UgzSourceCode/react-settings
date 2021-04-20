@@ -12,7 +12,7 @@ function App() {
           <p>{process.env.REACT_APP_NAME}</p>
           <p>REACT_APP_API:</p>
           {process.env.REACT_APP_API? (
-            <p>process.env.REACT_APP_API</p>
+            <p>{process.env.REACT_APP_API}</p>
           ) : (
             <div style={{color: "red"}}>NONE</div>
           )}
